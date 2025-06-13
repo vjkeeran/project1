@@ -12,7 +12,7 @@ main {
 
 .navbar {
     background-color: #007bff;
-    padding: 0.75rem 0;
+    padding: 0.5rem 1rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -25,17 +25,13 @@ main {
     align-items: center;
 }
 
-/* Styling for the new image logo */
+/* Updated logo styling */
 .navbar-logo-img {
-    height: 35px; /* Fixed height */
-    width: 35px;  /* Fixed width to make it square */
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    margin-right: 0.5rem;
-    object-fit: cover; /* Changed to cover to fill the area */
-    border-radius: 50%; /* Ensure it's perfectly circular */
-    flex-shrink: 0; /* Prevent the image from shrinking */
+    height: 40px; /* Same size as current logo */
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
 }
-
 
 .nav-link {
     color: #ffffff !important;
@@ -334,4 +330,10 @@ footer a:hover {
     .table th, .table td {
         padding: 0.75rem;
     }
+}
+
+/* Adjusted button size */
+.btn-sm {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
 }
