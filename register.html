@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Splashes</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Register your child for swimming lessons at Splashes. Fill out our secure online registration form today.">
+    <meta name="keywords" content="swim lesson registration, sign up for swimming, enrollment form, children's swim classes, register online">
+    <meta name="author" content="Your Team Name">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation (consistent across pages) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://placehold.co/40x40/007bff/ffffff?text=SPL" alt="Splashes Logo" class="me-2 rounded-circle">
+                    Splashes
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                                Register / Sign In
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container py-5 mt-5">
+        <h1 class="text-center mb-5 text-primary">Register for Swimming Lessons</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="card p-4 shadow-lg rounded-lg">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4 text-success">Student & Parent Information</h2>
+                        <!-- HTML Form with a button to submit -->
+                        <form id="registrationForm">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Full Name of Student <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="fullName" placeholder="e.g., John Doe" required>
+                                <!-- Validation feedback will be inserted here by JavaScript -->
+                            </div>
+                            <div class="mb-3">
+                                <label for="dob" class="form-label">Date of Birth <span class="text-danger">*</span></label>
+                                <input type="date" class="form-control" id="dob" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select" id="gender">
+                                    <option selected disabled value="">Select...</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Prefer not to say</option>
+                                </select>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="mb-3">
+                                <label for="parentName" class="form-label">Parent/Guardian Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="parentName" placeholder="e.g., Jane Doe" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="phone" placeholder="e.g., 123-456-7890" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" required>
+                                <small class="form-text text-muted">Format: 123-456-7890 or 1234567890</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Street Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="123 Main St">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="City">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="state" class="form-label">State</label>
+                                    <input type="text" class="form-control" id="state" placeholder="State">
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <label for="zip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="zip" placeholder="12345">
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="mb-3">
+                                <label for="preferredClass" class="form-label">Preferred Class Level</label>
+                                <select class="form-select" id="preferredClass">
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="beginner">Beginner Bubblers (Ages 3-5)</option>
+                                    <option value="intermediate">Intermediate Strokers (Ages 6-9)</option>
+                                    <option value="advanced">Advanced Divers (Ages 10-14)</option>
+                                    <option value="private">Private Lessons</option>
+                                    <option value="adult">Adult Learn-to-Swim</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comments" class="form-label">Any Medical Conditions or Special Needs?</label>
+                                <textarea class="form-control" id="comments" rows="3" placeholder="Please specify..."></textarea>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Create Password <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="password" required>
+                                <small class="form-text text-muted">Password must be at least 6 characters long.</small>
+                            </div>
+                            <div class="mb-4">
+                                <label for="confirmPassword" class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="confirmPassword" required>
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="termsAndConditions" required>
+                                <label class="form-check-label" for="termsAndConditions">
+                                    I agree to the <a href="#" class="text-primary text-decoration-none">Terms and Conditions</a> and <a href="#" class="text-primary text-decoration-none">Privacy Policy</a>. <span class="text-danger">*</span>
+                                </label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (consistent across pages) -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 Splashes. All rights reserved. | Follow us on <a href="#" class="text-light text-decoration-none">Facebook</a> | <a href="#" class="text-light text-decoration-none">Instagram</a></p>
+        </div>
+    </footer>
+
+    <!-- Registration/Sign-in Modal (Reused across pages) -->
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registrationModalLabel">Register or Sign In</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Welcome to Splashes! Please choose an option:</p>
+                    <div class="d-grid gap-2">
+                        <a href="register.html" class="btn btn-primary btn-lg">Register Now</a>
+                        <button type="button" class="btn btn-outline-secondary btn-lg" disabled>Sign In (Coming Soon)</button>
+                    </div>
+                    <small class="text-muted mt-3 d-block text-center">
+                        For a full registration, please use the "Register Now" button.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Vue.js (Not strictly needed on this page, but included for consistency) -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <!-- Custom jQuery AJAX Script -->
+    <script src="js/jquery_ajax.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

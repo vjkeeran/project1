@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splashes - Learn to Swim</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Splashes offers professional and fun swimming lessons for children of all ages. Build confidence in water!">
+    <meta name="keywords" content="swimming lessons, children swimming, swim school, learn to swim, kids swim, pool, water safety">
+    <meta name="author" content="Your Team Name">
+
+    <!-- Favicon (Optional) -->
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <!-- Branding Style Sheet & Logo Placeholder -->
+                <a class="navbar-brand" href="index.html">
+                    <!-- Placeholder for Logo -->
+                    <img src="https://placehold.co/40x40/007bff/ffffff?text=SPL" alt="Splashes Logo" class="me-2 rounded-circle">
+                    Splashes
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Button to trigger Registration/Sign-in Modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                                Register / Sign In
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="section-hero text-center py-5 mt-5">
+            <div class="container">
+                <h1 class="display-4">Dive into Learning with Splashes!</h1>
+                <p class="lead">Safe, fun, and effective swimming lessons for kids of all ages.</p>
+                <a href="classes.html" class="btn btn-primary btn-lg mt-3">Explore Our Classes</a>
+            </div>
+        </section>
+
+        <!-- About Us Section Preview -->
+        <section class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://placehold.co/600x400/add8e6/000000?text=Happy+Kids+Swimming" alt="Kids enjoying swimming lessons" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-3 text-primary">About Splashes</h2>
+                    <p class="lead">At Splashes, we believe every child should experience the joy and safety of swimming.</p>
+                    <p>Our certified instructors provide personalized attention in a nurturing environment, ensuring your child gains confidence and essential water skills. We focus on making learning fun!</p>
+                    <a href="about.html" class="btn btn-outline-primary mt-3">Learn More About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Classes Section -->
+        <section class="container py-5">
+            <h2 class="text-center mb-4 text-primary">Our Popular Classes</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Class Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/400x250/87ceeb/000000?text=Beginner+Swim" class="card-img-top rounded-top" alt="Beginner swimming class">
+                        <div class="card-body">
+                            <h5 class="card-title">Beginner Bubblers</h5>
+                            <p class="card-text">Perfect for little ones taking their first dip! Focus on water acclimation and basic safety.</p>
+                            <a href="classes.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Class Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/400x250/6495ed/000000?text=Intermediate+Swim" class="card-img-top rounded-top" alt="Intermediate swimming class">
+                        <div class="card-body">
+                            <h5 class="card-title">Intermediate Strokers</h5>
+                            <p class="card-text">Develop fundamental strokes like freestyle and backstroke. Build endurance and technique.</p>
+                            <a href="classes.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Class Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/400x250/4169e1/000000?text=Advanced+Swim" class="card-img-top rounded-top" alt="Advanced swimming class">
+                        <div class="card-body">
+                            <h5 class="card-title">Advanced Divers</h5>
+                            <p class="card-text">Refine all four competitive strokes and enhance speed and efficiency. For aspiring swimmers!</p>
+                            <a href="classes.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simple Vue Component Section (Example Integration) -->
+        <section class="container py-5">
+            <h2 class="text-center mb-4 text-primary">Why Choose Splashes?</h2>
+            <div id="app-vue" class="text-center p-4 bg-light rounded shadow-sm">
+                <h3>{{ message }}</h3>
+                <p class="lead">We currently offer {{ classCount }} different swimming programs.</p>
+                <ul class="list-unstyled">
+                    <li v-for="feature in features" :key="feature" class="my-2">
+                        <strong class="text-success">&check;</strong> {{ feature }}
+                    </li>
+                </ul>
+                <button @click="updateMessage" class="btn btn-outline-success mt-3">Learn More About Our Philosophy</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 Splashes. All rights reserved. | Follow us on <a href="#" class="text-light text-decoration-none">Facebook</a> | <a href="#" class="text-light text-decoration-none">Instagram</a></p>
+        </div>
+    </footer>
+
+    <!-- Registration/Sign-in Modal (Reused across pages) -->
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registrationModalLabel">Register or Sign In</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Welcome to Splashes! Please choose an option:</p>
+                    <div class="d-grid gap-2">
+                        <a href="register.html" class="btn btn-primary btn-lg">Register Now</a>
+                        <button type="button" class="btn btn-outline-secondary btn-lg" disabled>Sign In (Coming Soon)</button>
+                    </div>
+                    <small class="text-muted mt-3 d-block text-center">
+                        For a full registration, please use the "Register Now" button.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Vue.js (Version 2 for simplicity as requested by "simple VUE component") -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <!-- Custom jQuery AJAX Script -->
+    <script src="js/jquery_ajax.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
